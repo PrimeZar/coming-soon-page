@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon page</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+    
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="main.js" type="module"></script>  -->
+    
+
+</head>
+<body>
+    <div class="container">
+        <img src="sec_1_images/company logo.png" class="logo">
+
+        <div class="content">
+            <p> website Is Under Maintenace </p>
+            <h1> We're <span> Launching</span> Soon </h1>
+    
+            <div class="launch-time" id="launch-time">
+                <div class="days">
+                    <p>00</p>
+                    <span> Days </span>
+                </div>        
+                <div class="hours">
+                    <p>00</p>
+                    <span> Hours </span>
+                </div>        
+                <div class="minutes">
+                    <p>00</p>
+                    <span> Minutes </span>
+                </div>        
+                <div class="seconds">
+                    <p>00</p>
+                    <span> Seconds </span>
+                </div>        
+            </div>
+            <button> learn more <img src="sec_1_images/triangle.png"></button>       
+        </div>      
+        <img src="sec_1_images/rocket.png" alt="rocket" class="rocket">
+
+    </div>
+    
+
+    <!--  SECTION TWO (2) TO DO LIST  -->
+    <section class="todo_list">
+        <div class="logo">
+            <img src="image_company/company logo gold.png">
+            <div class="project_num">
+                <h1>2</h1>
+                <p>Project number</p>
+            </div>
+            
+        </div>
+        
+        <div class="todo-app">
+                <h2> TO DO LIST <img src="sec_2_images/icon.png"> </h2>
+                <div class="row">
+                    <input class="sec_2_input" type="text"  placeholder="Add your text here" id="input-box" />
+                    <button type="submit" onclick="task()" class="btn_sec_2"> Add </button>
+                    
+
+                    
+                </div>
+            <ul id="list-container">
+                    <!-- <li class="checked">item</li> -->
+                    <!-- <li>item</li>
+                    <li>item</li>  -->
+            </ul>
+        </div>
+    </section>
+
+    <!-- Section 3 ==== Quiz App  -->
+    <section class="section_3">
+        <div class="logo">
+            <img src="image_company/company logo gold.png">
+            <div class="project_num">
+                <h1>3</h1>
+                <p>Project number</p>
+            </div>
+            
+        </div>
+        <div class="sec_3_quiz">
+            <h1>Simple Quiz</h1>
+            <div class="quiz-app">
+                <h2 id="question"> Question goes here</h2>
+            
+                <div id="answer-buttons">
+                    
+                    <!-- <button class="btn_sec_3">Answer 1</button>
+                    <button class="btn_sec_3">Answer 2</button>
+                    <button class="btn_sec_3">Answer 3</button>
+                    <button class="btn_sec_3">Answer 4</button>
+                    -->
+                </div>
+                <button id="sec_3_btn_next"> Next</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- section 4 === Random Name Generator ===== -->
+    <section class="sec_4_randomName">
+        <div class="logo">
+            <img src="image_company/company logo gold.png">
+            <div class="project_num">
+                <h1>4</h1>
+                <p>Project number</p>
+            </div>
+            
+        </div>
+
+        <div class="randomGen"> 
+            <h1>Generate a <br> <span>Random Password</span></h1>
+            <div class="display">
+                <input type="password" id="password" placeholder="Password">
+                <img  id="eye_icon" src="sec_4_images/eye-close.png" alt="">
+                <img src="sec_4_images/copy.png" onclick=" copyPassWord() " alt="">          
+            </div>
+            <p>Password Strength : <span id="pass_strength"> </span></p>
+        
+            <button class="btn_randomGen"onclick=" createPassword() "><img src="sec_4_images/generate.png" alt=""> Generate Password</button>
+        </div> 
+    </section>
+
+    <!-- Section 5 === Note App ======= -->
+    <section class="sec_5">
+        <div class="logo">
+            <img src="image_company/company logo gold.png">
+            <div class="project_num">
+                <h1>5</h1>
+                <p>Project number</p>
+            </div>   
+        </div>
+
+        <h1> <img src="sec_5_images/notes.png" alt=""> Notes </h1>
+        <button class="btn_sec_5"> Create Notes</button>
+
+        <div class="sec_5_container">
+        <!-- <p contenteditable="true" class="sec_5_input-box">
+            <img src="sec_5_images/delete.png" alt="">
+        </p> -->
+        </div>
+    </section>
+
+    <!-- Section 6 === Age Calculator  -->
+    <section class="sec_6">
+        <div class="logo">
+            <img src="image_company/company logo gold.png">
+            <div class="project_num">
+                <h1>6</h1>
+                <p>Project number</p>
+            </div>    
+        </div>
+
+        <div class="sec_6_calc">
+            <h1>JavaScript <br> <span> Calculator </span>  </h1>
+            <div class="sec_6_input_box">
+                <input type="date" id="date">
+                <button onclick="calculateAge()"> Calculate </button>
+            </div>
+
+            <p id="sec_6_result"></p>
+        </div>
+    </section>
+
+    <!-- Section 07 ==== Quate ==== -->
+    <section class="sec_7">
+        <div class="logo">
+            <img src="image_company/company logo gold.png">
+            <div class="project_num">
+                <h1>7</h1>
+                <p>Project number</p>
+            </div>    
+        </div>
+
+        <div class="quote-box">
+            <h2>Quote of the day</h2>
+            <blockquote id="quote">Loading...</blockquote>
+            <span id="author">Loading...</span>
+
+            <div>
+                <button onclick="getMyQuote(api_url);"> New Quote</button>
+                <button onclick="twitter()" > Tweet </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 08 ====== QR SCANNER -->
+    <section class="QR_scanner">
+        <div class="logo">
+            <img src="image_company/company logo gold.png">
+            <div class="project_num">
+                <h1>8</h1>
+                <p>Project number</p>
+            </div>    
+        </div>
+
+        <div class="qr_scanner">
+            <p>Enter your text or URL</p>
+            <input type="text" placeholder="Text or URL" id="qr_text">
+            <div class="qr_image_box">
+                <img src="" id="qr_image">
+            </div>
+            <button onclick="getQRCode()">Generate QR Code</button>
+        </div>
+    </section>
+
+
+    <!-- SECTION 09 ===== MEDIA player -->
+    <section class="sec_09" >
+        <div class="logo">
+            <img src="image_company/company logo gold.png">
+            <div class="project_num">
+                <h1>9</h1>
+                <p>Project number</p>
+            </div>    
+        </div>
+        <div class="sec_09_media_player">
+            <div class="music-player">
+                <nav>
+                    <div class="circle">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </div>
+                    <div class="circle">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </nav>
+                <img src="sec_09_Media/Foresight Nemi.jpg" class="song-img">
+                <h1 aria-label="Artist">Liquid-Money</h1>
+                <p> Liquid-Money ft. money-speaking</p>
+    
+                <!-- <audio controls id="song">  -->
+                <audio id="song"> 
+                    <source src="sec_09_Media/Chinko-Ekun-Feat-Lil-Kesh-Zlatan-Able-God.mp3" type="audio/mp3">
+                </audio>
+                <input type="range" value="0" id="progress">
+    
+                <div class="media_controls">
+                    <div>
+                        <i class="fa-solid fa-backward"></i>
+                    </div>
+                    <div onclick="playPause()">
+                        <i class="fa-solid fa-play" id="playIcon"></i>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-forward"></i>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- === SECTION 10 ===== Toast Notification -->
+    <section class="sec_10">
+        <div class="logo">
+            <img src="image_company/company logo gold.png">
+            <div class="project_num">
+                <h1>10</h1>
+                <p>Project number</p>
+            </div>    
+        </div>
+
+        <div class="sec_10_btn">
+            <h1>Toast Notification</h1>
+            <button onclick="showToast(success)">Success</button>
+            <button onclick="showToast(secError)">Error</button>
+            <button onclick="showToast(invalid)">Invalid</button>
+        </div>
+    
+        <div id="toast_box">
+        
+        </div>
+    </section>
+
+    <!-- ====Sec 11 ====== Stop Watch ====  -->
+    <section class="sec_11_stop_Watch">
+        <div class="logo">
+            <img src="image_company/company logo gold.png">
+            <div class="project_num">
+                <h1>11</h1>
+                <p>Project number</p>
+            </div>    
+        </div>
+
+        <div class="stopWatch">
+            <h1 id="displayTime">00:00:00</h1>
+            <div class="sec_11_btn">
+                <img src="sec_11_stop_watch/stop.png" onclick="watchStop()" >
+                <img src="sec_11_stop_watch/start.png" onclick="watchStart()">
+                <img src="sec_11_stop_watch/reset.png" onclick="watchReset()" >
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/73a68c56f6.js" crossorigin="anonymous"></script> 
+    <script src="main.js"></script>
+    <!-- <script src="sec_3.js"></script> -->
+</body>
+</html>
