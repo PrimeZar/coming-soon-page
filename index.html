@@ -64,7 +64,7 @@
 
                     
                 </div>
-            <ul id="list-container">
+            <ul class="list-cont" id="list-container">
                     <!-- <li class="checked">item</li> -->
                     <!-- <li>item</li>
                     <li>item</li>  -->
@@ -295,17 +295,257 @@
         </div>
     </section>
 
+    <!-- Section 12 ===== Calculator ==== -->
+    <section class="sec_12">
+        <div class="logo">
+            <img src="image_company/company logo gold.png">
+            <div class="project_num">
+                <h1>12</h1>
+                <p>Project number</p>
+            </div>    
+        </div>
+
+        <div class="sec_12_calc">
+        
+            <div class="calculator">
+                <form>
+                    <div class="calc_screen">
+                        <input type="text" name="calc_display">
+                    </div>
+                    <div>
+                        <input type="button" value="AC" onclick="calc_display.value = '' " class="operator">
+                        <input type="button" value="DE" onclick="calc_display.value = calc_display.value.toString().slice(0, -1)" class="operator">
+                        <input type="button" value="," onclick="calc_display.value += ',' " class="operator">
+                        <input type="button" value="/" onclick="calc_display.value += '/' " class="operator">
+                    </div>
+                    <div>
+                        <input type="button" value="7" onclick="calc_display.value += '7' ">
+                        <input type="button" value="8" onclick="calc_display.value += '8' ">
+                        <input type="button" value="9" onclick="calc_display.value += '9' ">
+                        <input type="button" value="*" onclick="calc_display.value += '*' " class="operator">
+                    </div>
+                    <div>
+                        <input type="button" value="4" onclick="calc_display.value += '4' ">
+                        <input type="button" value="5" onclick="calc_display.value += '5' ">
+                        <input type="button" value="6" onclick="calc_display.value += '6' ">
+                        <input type="button" value="-" onclick="calc_display.value += '-' " class="operator">
+                    </div>
+                    <div>
+                        <input type="button" value="1" onclick="calc_display.value += '1' ">
+                        <input type="button" value="2" onclick="calc_display.value += '2' ">
+                        <input type="button" value="3" onclick="calc_display.value += '3' ">
+                        <input type="button" value="+" onclick="calc_display.value += '+' " class="operator">
+                    </div>
+                    <div>
+                        <input type="button" value="00" onclick="calc_display.value += '00' ">
+                        <input type="button" value="0" onclick="calc_display.value += '0' ">
+                        <input type="button" value="=" class="equal operator"  onclick="calc_display.value = eval(calc_display.value) ">
+                        
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 13 ===== Pop Up ===== -->
+    <section class="sec_13">
+        <div class="logo">
+            <img src="image_company/company logo gold.png">
+            <div class="project_num">
+                <h1>13</h1>
+                <p>Project number</p>
+            </div>    
+        </div>
+
+        <div class="sec_13_popUp">
+            <button type="submit" class="sec_13_btn" onclick=" openPopUp()" >Submit</button>
+        </div>
+        <div class="popUp" id="popUp">
+            <img src="sec_13_images/404-tick.png" alt="">
+            <h2> Thank You! </h2>
+            <p>Your details is been successfully submitted. Thanks !</p>
+            <button type="button" onclick="closePopUp()">OK</button>
+        </div>
+    </section>
+
+    <!-- Section 14 ==== Dark Theme changer ===== -->
+    <section id="sec_14">
+        <div class="logo">
+            <img src="image_company/company logo gold.png">
+            <div class="project_num">
+                <h1>14</h1>
+                <p>Project number</p>
+            </div>    
+        </div>
+        
+        <div class="sec_14_con">
+            <div class="sec_14_change_theme">
+                <nav class="sec_14_nav">
+                    <ul class="chan_col">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">CONTACT US</a></li>
+                        <li><a href="#">PORTFOLIO </a></li>
+                        <li><a href="#">SERVICES</a></li>
+                    </ul>
+                
+                </nav>
+            </div>
+
+            <div class="moon_box">
+                <p id="sec_14_moon"> Click me to change background Color <img id="moon" src="sec_14_dark theme icon/moon.png">
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION_15_Drag_and_Drop -->
+<section class="sec_15">
+    <div class="logo">
+        <img src="image_company/company logo gold.png">
+        <div class="project_num">
+            <h1>15</h1>
+            <p>Project number</p>
+        </div>    
+    </div>
+
+    <div class="sec_15_drag_and_drop">
+        <div id="sec_15_left_box">
+            <div class="sec_15_list" draggable="true" id="sec15List">
+                <img src="sec_15_drag_and_drop/drag_drop_icon.png"> List Items 1
+            </div>
+            <div class="sec_15_list" draggable="true" id="sec15List">
+                <img src="sec_15_drag_and_drop/drag_drop_icon.png"> List Items 2
+            </div>
+            <div class="sec_15_list" draggable="true" id="sec15List">
+                <img src="sec_15_drag_and_drop/drag_drop_icon.png"> List Items 3
+            </div>
+            <div class="sec_15_list" draggable="true" id="sec15List">
+                <img src="sec_15_drag_and_drop/drag_drop_icon.png"> List Items 4
+            </div>
+        </div>
+
+        <div id="sec_15_right_box">
+
+        </div>
+    </div>
+</section>
 
 
+<!-- ==== section 16 ====  -->
+<section class="sec_16">
+    <div class="logo">
+        <img src="image_company/company logo gold.png">
+        <div class="project_num">
+            <h1>0016</h1>
+            <p>Project number</p>
+        </div>    
+    </div>
+
+    <div class="sec_16_form">
+        <form>
+            <i class="fas fa-paper-plane"></i>
+
+            <div class="input-group">
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter your name" id="contact-name" onkeyup="validateName()">
+                <span id="name-error">  </span>
+            </div>
+
+            <div class="input-group">
+                <label>Phone No.</label>
+                <input type="tel" placeholder="123 456 7890" id="contact-phone" onkeyup="validatePhone()">
+                <span id="name-error"> </span>
+            </div>
+
+            <div class="input-group">
+                <label>Email Id</label>
+                <input type="email" placeholder="Enter Email">
+                <span id="email-error"> Email  is required </span>
+            </div>   
+
+            <div class="input-group">
+                <label>Your Message</label>
+                <textarea rows="5" placeholder="Enter your message"></textarea>
+                <span id="name-error"> message is required </span>
+            </div>
+
+        <button onclick="submitBbtn(e)"> Submit </button>
+        <span id="submit-error"> Please fix error </span>
+
+        </form>
+    </div>
+</section>
 
 
+    <!-- Section 17 ==== Create Gallery ===== -->
+    <section>
+        <div class="sec_17">
+            <div class="logo">
+                <img src="image_company/company logo gold.png">
+                <div class="project_num">
+                    <h1>17</h1>
+                    <p>Project number</p>
+                </div>    
+            </div>
+
+            <div class="gallery-wrap">
+            <img src="sec_17_Image_Gallery/back.png" alt="back" id="btn_17_backBtn"> 
+
+                <div class="sec_17_gallery">
+                    <div class="gallery-1">
+                        <span><img src="sec_17_Image_Gallery/image-1.png" alt="1"></span>
+                        <span><img src="sec_17_Image_Gallery/image-2.png" alt="2"></span>
+                        <span><img src="sec_17_Image_Gallery/image-3.png" alt="3"></span>
+                    </div>
+
+                    <div class="gallery-2">
+                        <span><img src="sec_17_Image_Gallery/image-4.png" alt="4"></span>
+                        <span><img src="sec_17_Image_Gallery/image-5.png" alt="5"></span>
+                        <span><img src="sec_17_Image_Gallery/image-6.png" alt="6"></span>
+                    </div>
+                    
+                </div>
+                <img src="sec_17_Image_Gallery/next.png" alt="next" id="btn_17_forwardBtn">
+            </div>
+        </div>
+    </section>
 
 
+    <!-- ====== Section 18 ==== Email Subscription ======== -->
+<section class="sec_18">
+    <div class="hero">
+        <h3>Coming Soon</h3>
+        <h1> OurBrand New <br> website is On it's way </h1>
+        <p>Subscribe for more details.</p>
+        
+<!-- <form class="sec_18_form"  name="submit-to-google-sheet"
+        method="POST" 
+        action="https://script.google.com/macros/s/AKfycbxdAnLI5-wrpQeUMUEZAbMfMm1bgLd1yR8OOxB34XLj17VBzn7e2z-RzOu67sdbYXYaqQ/exec">         -->
+        
+        <form class="sec_18_form"  name="submit-to-google-sheet">  
+        <input type="email" name="Email" placeholder="Your email">
+            <button  class="sec_18_btn" type="submit"><img src="sec_18_images/send-icon.png" width="30px"></button>
+        </form>
+        <span id="sec_18_msg">  </span>
+    </div>
+</section>
 
-
+    <!-- Section 19 ==== Voice Converter =======  -->
+    <section class="sec_19">
+        <div class="sec_19_hero">
+            <h1> Text To Speech <span> Converter </span>  </h1>
+            <textarea placeholder=" Write anything here.... " id="" cols="30" rows="10"></textarea>
+                <div class="sec_19_row">
+                    <select > </select>
+                    <button class="sec_19_btn"> <img src="sec_19_image/play.png" alt=""> Listen </button>
+                
+                </div>
+            
+        </div>
+    </section>
 
     <script src="https://kit.fontawesome.com/73a68c56f6.js" crossorigin="anonymous"></script> 
     <script src="main.js"></script>
-    <!-- <script src="sec_3.js"></script> -->
+    
 </body>
 </html>

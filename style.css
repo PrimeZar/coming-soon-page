@@ -5,14 +5,15 @@
     font-family: 'poppins', 'sans-serif';
 }
 
-/* body{
+body{
     background-image: url(images/Foresight_Nemi.png);
     background-repeat: no-repeat;
     height: auto;
     width:auto;
-} */
+}
+
 .container{
-    width: 100vw;
+    width: 100%; 
     height: 100vh;
     background-image: url(sec_1_images/Foresight_Nemi.png);
     background-repeat: no-repeat;
@@ -187,8 +188,6 @@
     padding: 20px;
     font-weight: 14px;
     border-radius: 43px;
-    
-    
 }
 
 .btn_sec_2{
@@ -202,7 +201,7 @@
     border-radius: 40px;
 }
 
-ul li {
+.list-cont li {
     list-style: none;
     font-size: 17px;
     padding: 12px 8px 12px 50px;
@@ -217,7 +216,7 @@ ul li {
     */
 } 
 
-ul li::before{
+.list-cont li::before{
     content: " ";
     position: absolute;
     height: 28px;
@@ -256,26 +255,21 @@ ul li span{
 .section_3{
     background: url(sec_3_images/Foresight_Nemi.png);
     background-size: cover;
-    width: 90%;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
     background-repeat: no-repeat;
     padding: 2rem;
-
 }
-/* .sec_3_quiz{
-    background: #e26b6b;
-    width: 90%;
-    max-width: 600px;
-    margin: 100px auto 0;
-    border-radius: 10px;
-    padding: 30px;
-} */
 
 .sec_3_quiz{
-    margin-top: 2rem;
-    
-}
+    width: 90%;
+    height: 30rem;
+    max-width: 600px;
+    margin: 100px auto 0 ;
+    border-radius: 10px;
+    padding: 30px;
+} 
+
+
 .sec_3_quiz h1{
     font-size: 25px;
     color: #d2e6b8;
@@ -287,6 +281,7 @@ ul li span{
 .quiz-app{
     padding: 20px 0;
 }
+
 .quiz-app h2{
     font-size: 25px;
     color: rgb(255, 255, 255);
@@ -347,6 +342,7 @@ ul li span{
     width: 90%;
     max-width: 700px;
 }
+
 .display{
     width: 80%;
     margin-top: 50px;
@@ -440,7 +436,6 @@ ul li span{
 .sec_5 button img{
     width: 25px;
     margin-right: 8px;
-
 }
 
 .sec_5 button{
@@ -850,7 +845,7 @@ nav .circle{
 .sec_10{
     background: #ad61eb;
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     padding-top: 10px;
 }
@@ -949,7 +944,7 @@ nav .circle{
 /* ====Sec 11 ====== Stop Watch ==== */
 .sec_11_stop_Watch{
     background: #b0acc7;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     padding: 5px;
 }
@@ -988,6 +983,533 @@ nav .circle{
 .sec_11_btn img :nth-child(2){
     width: 80px;
 }
+
+/* Section 12 ===== Calculator ==== */
+.sec_12{
+    background: #e3f9ff;
+    width: 100%;
+    height: 100vh;
+    
+}
+.sec_12_calc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator{
+    background: #3e4452;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.calculator form input{
+    border: 0;
+    outline: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255 , 0.4), -5px 5px 15px rgba(0, 0, 0 , 0.1) ;
+    /* box-shadow: -8px -8px 15px rgba(255, 255, 255 , 0.9); */
+    background: transparent;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+}
+
+form .calc_screen{
+    display: flex;
+    margin: 20px 0;
+}
+
+form .calc_screen input{
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+}
+
+form input.equal{
+    width: 120px;
+}
+
+form input.operator{
+    color: #33ffd8;
+}
+
+/* Section 13 ===== Pop Up ============== */
+.sec_13{
+    width: 100%;
+    height: 100vh;
+    background: #3c5077;
+    position: relative;
+}
+.sec_13_popUp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.sec_13_btn{
+    padding: 10px 60px;
+    background: #fff;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 30px;
+}
+
+.popUp{
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1); 
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: top 0.4s;
+}
+
+.open_popUp{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popUp img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0 , 0.2);
+}
+
+.popUp h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+
+.popUp button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0 , 0.2);
+}
+
+/* Section 14 ==== Dark Theme changer ===== */
+#sec_14{
+    height: 100vh;
+    width: 100%;
+    background: var(--primary-color);
+}
+.sec_14_con{
+    padding: 0 3rem;
+    color: var(--secondary-color);
+}
+
+:root{
+    --primary-color : rgb(235, 202, 241);
+    --secondary-color : rgb(0, 0, 0);
+}
+
+.dark_theme{
+    --primary-color : rgb(32, 48, 25);
+    --secondary-color : rgb(219, 217, 218);
+}
+.sec_14_change_theme{
+    display: flex;
+    justify-content: flex-end;
+} 
+
+.chan_col{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chan_col li{
+    list-style: none;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 400;
+    /* letter-spacing: 2px; */
+}
+
+.chan_col li a{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+#moon{
+    height: 2em;
+    width: 2em;
+    /* margin-right: 3rem; */
+    cursor: pointer;
+}
+
+.moon_box p{
+    display: flex;
+    align-items:center;
+    margin: 4rem 0;
+    cursor: pointer;
+    border: 3px solid var(--secondary-color);
+    padding: 2px 4px;
+}
+
+.moon_box img {
+    margin-left: 2rem;
+}
+
+/* ======== SECTION_15_Drag_and_Drop =========== */
+.sec_15{
+    background: #0b0423;
+}
+.sec_15_drag_and_drop{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sec_15_left_box, 
+#sec_15_right_box {
+    width: 300px;
+    min-height: 400px;
+    margin: 20px;
+    border: 2px dashed #fff;
+}
+
+.sec_15_list{
+    background: #e087a5;
+    height: 60px;
+    margin: 30px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    cursor: grab;
+}
+
+.sec_15_list img{
+    width: 10px;
+    margin-right: 15px;
+    margin-left: 20px;
+}
+
+/* =========== Section 16 Form Validation ======= */
+
+.sec_16{
+    background: #141a34;
+}
+.sec_16_form{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.useful-links{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+
+}
+.useful-links a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+.sec_16 form{
+    width: 90%;
+    max-width: 500px;
+    padding: 50px 30px 20px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+.fa-paper-plane{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    font-size: 26px;
+    padding: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.input-group{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    position: relative;
+}
+.input-group label{
+    flex-basis: 28%;
+}
+.input-group input, .input-group textarea{
+    flex-basis: 68%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #999;
+    color: #333;
+    font-size: 16px;
+}
+::placeholder{
+    font-size: 14px;
+}
+
+form button{
+    background: #141a34;
+    color: #fff;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    padding: 10px 40px;
+    outline: 0;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto 10px;
+}
+
+.input-group span{
+    position: absolute;
+    bottom: 12px;
+    right: 17px;
+    font-size: 14px;
+    color: red;
+
+}
+
+.input-group span i{
+    color: seagreen;
+}
+
+#submit-error{
+    color: red;
+}
+
+
+
+/* ========== Section 17 ==== Create Gallery ===== */
+.sec_17{
+    background: #191919;
+    height: 100vh;
+}
+
+.sec_17_gallery{
+    width: 900px;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.sec_17_gallery div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 20px;
+    flex: none;
+}
+
+.sec_17_gallery div img{
+    width: 100%;
+    filter: grayscale(100%);
+    transition: transform 0.5s; 
+}
+
+.sec_17_gallery div img:hover{
+    filter: grayscale(0);
+    cursor: pointer;
+    transform: scale(1.1);
+} 
+
+.sec_17_gallery::-webkit-scrollbar{
+    display: none;
+}
+
+.gallery-1{
+    margin-right: 20px;
+}
+.gallery-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10% auto;
+}
+
+#btn_17_backBtn, #btn_17_forwardBtn{
+    width: 50px;
+    cursor: pointer;
+    margin: 40px;
+}
+
+
+/* ====== Section 18 ==== Email Subscription ======== */
+
+.sec_18{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('sec_18_images/Foresight\ Nemi.jpg') ;
+    background-position: center;
+    background-size: cover;
+    padding: 10px 10px;
+    color: #fff;
+}
+
+.hero h3{
+    margin-top: 15%;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.hero h1{
+    margin-top: 30px;
+    font-size: 50px;
+}
+
+.hero p{
+    margin: 10px 0 50px;
+}
+
+.sec_18_form{
+    background: #fff;
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    height: 4rem;
+    
+}
+
+.sec_18_form input{
+    border: 0;
+    outline: none;
+    padding: 10px 20px;
+    width: 400px;
+    font-size: 16px;
+    height: 4em;
+}
+
+.sec_18_form .sec_18_btn{
+    background: #61b752;
+    border: none;
+    margin-bottom: 30px;
+    height: 4.8em;
+
+} 
+
+.hero span{
+    color: #61b752;
+    margin-top: 10px;
+    display: block;
+}
+
+/* Section 19 ==== Voice Converter =======  */
+.sec_19{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg, #010758, #490d61);
+}
+
+.sec_19_hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.sec_19_hero h1{
+    font-size: 45px;
+    font-weight: 500;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.sec_19_hero h1 span{
+    color: #ff2963;
+} 
+
+textarea{
+    width: 600px;
+    height: 250px;
+    background: #403d84;
+    color: #fff;
+    font-size: 15px;
+    border: 0;
+    outline: 0;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    resize: none;
+}
+
+textarea::placeholder{
+    color: #fff;
+    font-size: 16px;
+}
+
+.sec_19_row{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.sec_19_btn{
+    background: #ff2963;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 35px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+.sec_19_btn img{
+    width: 16px;
+    margin-right: 10px;
+}
+
+select{
+    flex: 1;
+    color: #fff;
+    background: #403d84;
+    height: 50px;
+    padding: 0 20px;
+    outline: 0;
+    border: 0;
+    border-radius: 35px; 
+    appearance: none;
+    background-image: url(sec_19_image/dropdown.png);
+    background-repeat: no-repeat; 
+    background-size: 15px;
+    background-position-x: calc(100% - 20px);
+    background-position-y: 20px;
+}
+
+
+
 
 
 

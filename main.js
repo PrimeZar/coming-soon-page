@@ -41,7 +41,6 @@ let time = setInterval( () => {
     } else{
         let li = document.createElement('li');
         li.innerHTML = input_con.value;
-        console.log(li.innerHTML);
         list_con.appendChild(li); 
         let span = document.createElement('span');
         span.innerHTML ="\u00d7";
@@ -51,8 +50,6 @@ let time = setInterval( () => {
         saveData();
     }
 }
-
-
 
 list_con.addEventListener('click', (e) => {
     if (e.target.tagName === 'LI'){
@@ -70,7 +67,6 @@ const saveData = () => {
 function showData() {
     list_con.innerHTML = localStorage.getItem('data');
 }
-
 
 
 // [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
@@ -199,6 +195,9 @@ nextButton.addEventListener('click', () =>{
 
 startQuiz();
 
+
+// [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
 // =========== SECTION 4 === Random Name Generator ======
 const passwordBox = document.getElementById('password');
 const pass_str = document.getElementById('pass_strength');
@@ -270,6 +269,9 @@ eye_icon.addEventListener('click', () => {
 })
 
 
+
+// [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
 // Section 5 ===== Notes App =========
 const notesContainer = document.querySelector(".sec_5_container");
 const sec_5_createBtn = document.querySelector('.btn_sec_5');
@@ -316,6 +318,9 @@ notesContainer.addEventListener('click', (e) => {
 //     event.preventDefault();
 //     }
 // })
+
+
+// [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
 
 // ===== Section 6 ==== Age Calc ========
 
@@ -365,6 +370,9 @@ function getDaysInMonth(year, month){
     return new Date(year, month, 0).getDate();
 }
 
+
+// [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
 // ===== section 07 === Quote ===== 
 
 const quote = document.getElementById('quote');
@@ -390,8 +398,10 @@ function twitter(){
 getMyQuote(api_url);
 
 
-//======= SECTION 08 ===== QR CODE SCANNER =====
 
+// [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+//======= SECTION 08 ===== QR CODE SCANNER =====
 
 let qrText = document.getElementById('qr_text');
 let qrImage = document.getElementById('qr_image');
@@ -429,8 +439,10 @@ sec_5_createBtn.addEventListener('click', () => {
     // qrImage.src = "https://api.qrserver.com/v1/create-qr-code/?data=" + qrInput.value;
 
 
-    // SECTION 09 ===== MEDIA player =======
+    
+// [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
 
+    // SECTION 09 ===== MEDIA player =======
 window.addEventListener('load', () =>{
     song.pause();
 })
@@ -467,6 +479,8 @@ progress.onchange = function(){
 }
 
 
+// [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
 // === SECTION 10 ===== Toast Notification
 let toastBox = document.getElementById('toast_box');
 
@@ -497,8 +511,10 @@ function showToast (mgs){
     }, 5000);
 }
 
-// ====Sec 11 ====== Stop Watch ==== 
 
+// [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+// ====Sec 11 ====== Stop Watch ==== 
     let DisplayTime = document.getElementById('displayTime');
     let [stopWatch_seconds, stopWatch_minutes, stopWatch_hours] = [0,0,0];
     let timer = null;
@@ -537,3 +553,183 @@ function watchStart(){
 
     timer = setInterval(startWatch,1000);
 }
+
+
+// [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+// NO CODE FOR CALCULATOR PROJECT 12 HERE ---
+// Section 13 ===== Pop Up =====
+let popUp = document.getElementById('popUp');
+
+function openPopUp(){
+    popUp.classList.add('open_popUp');
+}
+
+function closePopUp() {
+    popUp.classList.remove('open_popUp');
+}
+
+
+
+// [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+// Section 14 ==== Dark Theme changer =====
+
+const sec_14 = document.getElementById('sec_14');
+const moon = document.getElementById('moon');
+
+
+sec_14_moon.onclick = function(){
+    sec_14.classList.toggle('dark_theme');
+    if(sec_14.classList.contains('dark_theme')){
+        moon.src = 'sec_14_dark theme icon/sun.png';
+    } else {
+        moon.src = 'sec_14_dark theme icon/moon.png';
+    }
+}
+
+// SECTION_14_Drag_and_Drop
+
+
+    let sec_15_left_box = document.getElementById('sec_15_left_box');
+    let sec_15_right_box = document.getElementById('sec_15_right_box');
+    let sec_lists = document.getElementById('sec15List');
+
+
+    for (flist of sec15List ){
+        flist.addEventListener('dragstart', (e) => {
+            let selected = e.target;
+
+            sec_15_right_box.addEventListener('dragover', (e) =>{
+                e.preventDefault();
+            });
+
+            sec_15_right_box.addEventListener('drop', (e)=> {
+                sec_15_right_box.appendChild(selected);
+                selected = null;
+            });
+
+            // left box
+            sec_15_left_box.addEventListener('dragover', (e) =>{
+                e.preventDefault();
+            });
+
+            sec_15_left_box.addEventListener('drop', (e)=> {
+                sec_15_left_box.appendChild(selected);
+                selected = null;
+            });
+        });
+    }
+
+
+    // =========== Section 16 Form Validation ======= 
+
+let sec_16_nameError = document.getElementById('name-error');
+let sec_16_phoneError = document.getElementById('phone-error');
+let sec_16_emailError = document.getElementById('email-error');
+let sec_16_messageError = document.getElementById('message-error');
+let sec_16_submitError = document.getElementById('submit-error');
+
+
+function validateName(){ 
+    let name = document.getElementById('contact-name').value;
+    if (name.length === 0){
+        sec_16_nameError.innerHTML = 'Full Name is required';
+    }
+
+    if (!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)) {
+        sec_16_nameError.innerHTML = 'Write full name';
+        return false;
+    }
+
+    sec_16_nameError = '<i class="fas fa-check-circle"></i>';
+    return true;
+
+}
+
+
+function validatePhone(){ 
+    let sec_16_phone = document.getElementById('contact-phone').value;
+    if (sec_16_phone.length === 11){
+        sec_16_phoneError.innerHTML = 'Phone No is required';
+    }
+
+    if (!sec_16_phone.match(/^[0-9]{11}$/)) {
+        sec_16_phoneError.innerHTML = ' Phone number should be 11 digit';
+        return false;
+    }
+
+    sec_16_phoneError = '<i class="fas fa-check-circle"></i>';
+    return true;
+
+}
+
+// const submitBtn = (e)=>{
+//     e.preventDefault();
+// }
+
+
+
+// ========== Section 17 ==== Create Gallery =====
+
+
+const scrollContainer = document.querySelector('.sec_17_gallery');
+const sec_17_backBtn = document.getElementById('btn_17_backBtn');
+const sec_17_forwardBtn = document.getElementById('btn_17_forwardBtn');
+
+scrollContainer.addEventListener('wheel', (e) =>{
+    e.preventDefault();
+    scrollContainer.scrollLeft += e.deltaY;
+    scrollContainer.style.scrollBehavior = 'auto';
+})
+
+sec_17_backBtn.addEventListener('click', () =>{
+    scrollContainer.scrollLeft += 200;
+    scrollContainer.style.scrollBehavior = 'smooth';
+})
+
+sec_17_forwardBtn.addEventListener('click', () =>{
+    scrollContainer.scrollLeft -= 200;
+    scrollContainer.style.scrollBehavior = 'smooth';
+})
+
+
+
+// ====== Section 18 ==== Email Subscription ========
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxdAnLI5-wrpQeUMUEZAbMfMm1bgLd1yR8OOxB34XLj17VBzn7e2z-RzOu67sdbYXYaqQ/exec';
+const form = document.forms['submit-to-google-sheet']
+const sec_18_msg = document.getElementById('sec_18_msg');
+
+form.addEventListener('submit', e => {
+    e.preventDefault();
+    fetch(scriptURL, { 
+        method:'POST', 
+        body: new FormData(form)})
+
+        .then(response => 
+        sec_18_msg.innerHTML = 'Thank you for your Subcription')
+            setInterval(() => {
+                sec_18_msg.innerHTML = ' ';
+            }, 7000);
+            form.reset()
+
+        .catch(error => 
+            sec_18_msg.innerHTML = 'Error Occured',
+            console.log('Error', error.message))
+})
+
+// Section 19 ==== Voice Converter ======= 
+
+let speech = new SpeechSynthesisUtterance();
+// let voices = [];
+
+
+document.querySelector('.sec_19_btn').addEventListener('click', () =>{
+    speech.text = document.querySelector('textarea').value;
+    window.speechSynthesis.speak(speech);
+
+});
+
+
+
+
