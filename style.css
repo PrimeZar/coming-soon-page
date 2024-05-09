@@ -1510,6 +1510,223 @@ select{
 
 
 
+/* Section 20 ==== Make Image Background Change === */
+.sec_20{
+    width: 100%;
+    height: 100vh;
+}
+.image_background{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f3fbff;
+}
+
+.sec_20_img_box{
+    width: 60%;
+    margin: auto;
+    line-height: 0;
+    background-image: url(sec_20_img_background_change/background.png);
+    overflow: hidden;
+    position: relative;
+}
+
+.sec_20_img-wrap{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+/* Section 21 ==== Create Mini Calendar ==== */
+.sec_21{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #1d0000, #20205b);
+    
+}
+
+.mini_calendar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calendar{
+    width: 300px;
+    height: 250px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.left, 
+.right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.right{
+    width: 42%;
+    background: #f4351e;
+    color: #fff;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.left{
+    width: 58%;
+}
+
+
+/* Section 22 ==== Make Select Menu Design ==== */
+.sec_22{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient( #f44336, #730228);
+}
+
+.sec_22_menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.selector{
+    width: 350px;
+}
+
+#selectField{
+    width: 100%;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+#selectField img{
+    width: 12px;
+}
+
+#sec_22_list{
+    width: 100%;
+    background: rgba(225, 255, 255, 0.7);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.sec_22_option{
+    width: 100%;
+    padding: 15px 0 15px 70px;
+    list-style: none;
+    cursor:pointer;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.sec_22_option img{
+    width: 25px;
+    position: absolute;
+    top: 12px;
+    left: 25px;
+}
+
+.sec_22_option:hover{
+    background: rgba(255, 255, 255, 0.7);
+}
+
+
+/* Section 23 ==== Make Circular Progress Bar === */
+.sec_23{
+    background: #668099;
+    height: 100vh;
+}
+.sec_23_cir_pro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec_23_skill{
+    width: 160px;
+    height: 160px;
+    position: relative;
+    /* background: cornflowerblue; */
+}
+
+.outer{
+    height: 160px;
+    width: 160px;
+    padding: 19px;
+    border-radius: 50%;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+    /* border: 1px solid red; */
+}
+
+.inner{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2), 
+                inset -4px 4px 6px -1px rgba(255, 255, 255, 0.7),
+                -0.5px -0.5px 8px rgb(255, 255, 255, 1), 
+                0.5px 0.5px 20px rgba(0, 0, 0, .15),
+                0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sec_23_number{
+    font-weight: 600;
+    font-size: 2rem;
+    color: #d3cccc;
+}
+
+circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim 2s linear forwards;
+
+}
+
+svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@keyframes anim{
+    100%{
+        stroke-dashoffset: 234;
+        /* 360 - 65% = 234; */
+    }
+}
+
+
+
+
+/* Section 24 ==== Product Page Design ===== */
+/* Section 25 ==== CrptoCurrency Website ==== */
+/* Section 26 ==== Digital Clock ==== */
+/* Section 27 ==== Image Search Engine ==== */
+
+
+
 
 
 

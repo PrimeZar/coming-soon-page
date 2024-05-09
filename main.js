@@ -730,6 +730,64 @@ document.querySelector('.sec_19_btn').addEventListener('click', () =>{
 
 });
 
+// to be continued 
+Comment
+
+
+// Section 20 ==== Make Image Background Change ===
+    const sec_20_ImgBox = document.querySelector('.sec_20_img_box');
+    const imgWrap = document.querySelector('.sec_20_img-wrap');
+
+    const leftSpace = sec_20_ImgBox.offsetLeft;
+
+    sec_20_ImgBox.onmouselmove = function (e){
+        e.pageX;
+    }
+
+    // To be Continue Sec 20
+    Comment
+
+
+// Section 21 ==== Create Mini Calendar ====
+    const date = document.getElementById('date');
+    const day = document.getElementById('day');
+    const month = document.getElementById('month');
+    const year = document.getElementById('year');
+
+    const today = new Date();
+
+    console.log(today);
+
+    // To be continued sec 21
+    Comment
+
+// Section 22 ==== Make Select Menu Design ====
+    const selectField = document.getElementById('selectField');
+    const selectText = document.getElementById('selectText');
+    const sec_22_option = document.getElementsByClassName('sec_22_option');
+
+    // To be Continue sec 22
+    Comment
+
+// Section 23 ==== Make Circular Progress Bar ===
+
+    let sec_23_number = document.getElementById('sec_23_number');
+    let counter = 0;
+
+    setInterval(() =>{
+        if(counter === 65){
+            clearInterval();
+        } else{
+            counter += 1;
+            sec_23_number.innerHTML = counter + '%'
+        }
+    },30);
+    
+
+// Section 24 ==== Product Page Design =====
+// Section 25 ==== CrptoCurrency Website ====
+// Section 26 ==== Digital Clock ====
+// Section 27 ==== Image Search Engine ====
 
 
 
