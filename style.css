@@ -1718,9 +1718,82 @@ svg{
 }
 
 
-
-
 /* Section 24 ==== Product Page Design ===== */
+.product_page_design{
+    width: 100%;
+    min-height: 100vh;
+    background: #d0eaff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.products{
+    width: 90%;
+    max-width: 750px;
+    display: flex;
+}
+
+.gallery{
+    flex-basis: 40%;
+    background: #241e20;
+    transform: scale(1.05);
+    box-shadow: -10px 5px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery img{
+    width: 100%;
+    display: block;
+    padding-top: 100px;
+}
+
+.details{
+    flex-basis: 53%;
+    background:#fff;
+    padding: 40px;
+    padding-left: 60px;
+    box-shadow: -10px 5px 10px 10px  rgba(0, 0, 0, 0.1);
+    font-size: 13px;
+    font-weight: 500;
+    color: #777;
+    
+}
+
+.details h1{
+    color: #333;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.details h2{
+    color: #555;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.details h3{
+    color: #00d874;
+    margin-bottom: 20px;
+}
+
+.details form{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.size_select{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    background-color: blueviolet;
+}
+
+.size_select p{
+    width: 70px;
+    background: red;
+}
+
+
 /* Section 25 ==== CrptoCurrency Website ==== */
 /* Section 26 ==== Digital Clock ==== */
 /* Section 27 ==== Image Search Engine ==== */
