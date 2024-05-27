@@ -588,9 +588,7 @@ sec_14_moon.onclick = function(){
     }
 }
 
-// SECTION_14_Drag_and_Drop
-
-
+// SECTION_15_Drag_and_Drop
     let sec_15_left_box = document.getElementById('sec_15_left_box');
     let sec_15_right_box = document.getElementById('sec_15_right_box');
     let sec_lists = document.getElementById('sec15List');
@@ -785,6 +783,48 @@ Comment
     
 
 // Section 24 ==== Product Page Design =====
+let sec_24_productImg = document.getElementById('sec_24_productImg');
+let sec_24_btn = document.getElementsByClassName('sec_24_btn');
+
+sec_24_btn[0].onclick = function(){
+    sec_24_productImg.src="sec_24_image_product_page_design/120.webp";
+
+    for(bt of sec_24_btn){
+        bt.classList.remove("active");
+    }
+    this.classList.add("active");
+}
+sec_24_btn[1].onclick = function(){
+    sec_24_productImg.src="sec_24_image_product_page_design/122.webp";
+    
+    for( bt of sec_24_btn ){
+        bt.classList.remove("active");
+    }
+    this.classList.add("active");
+}
+sec_24_btn[2].onclick = function(){
+    sec_24_productImg.src="sec_24_image_product_page_design/121.webp";
+    
+    for( bt of sec_24_btn ){
+        bt.classList.remove("active");
+    }
+    this.classList.add("active");
+}
+
+const color_1= ()=>{
+    sec_24_productImg.src="sec_24_image_product_page_design/Mens-Standard-Fit-Heathered-Short-Sleeve-V-Neck-T-Shirt01-600x764.jpg";   
+}
+const color_2= ()=>{
+    sec_24_productImg.src="sec_24_image_product_page_design/Mens-Standard-Fit-Short-Sleeve-Crew-T-Shirt01-600x764.jpg";   
+}
+const color_3= ()=>{
+    sec_24_productImg.src="sec_24_image_product_page_design/3_1.jpg";   
+}
+const color_4= ()=>{
+    sec_24_productImg.src="sec_24_image_product_page_design/140.jpeg";   
+}
+
+
 // Section 25 ==== CrptoCurrency Website ====
 // Section 26 ==== Digital Clock ====
 // Section 27 ==== Image Search Engine ====

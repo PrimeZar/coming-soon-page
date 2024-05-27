@@ -1719,44 +1719,51 @@ svg{
 
 
 /* Section 24 ==== Product Page Design ===== */
-.product_page_design{
+.sec_24_Product_design{
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     background: #d0eaff;
+}
+.product_page_design{
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
+
 .products{
     width: 90%;
     max-width: 750px;
     display: flex;
+    margin-top: 2rem;
 }
 
 .gallery{
+    height: 27rem;
     flex-basis: 40%;
     background: #241e20;
     transform: scale(1.05);
     box-shadow: -10px 5px 10px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
 .gallery img{
     width: 100%;
+    height: 100%;
     display: block;
-    padding-top: 100px;
+    padding: 2rem 0 2rem 0;
+
 }
 
 .details{
+    height: 27rem;
     flex-basis: 53%;
     background:#fff;
-    padding: 40px;
+    padding: 20px;
     padding-left: 60px;
     box-shadow: -10px 5px 10px 10px  rgba(0, 0, 0, 0.1);
     font-size: 13px;
     font-weight: 500;
     color: #777;
-    
 }
 
 .details h1{
@@ -1785,16 +1792,190 @@ svg{
     display: flex;
     align-items: center;
     margin-top: 50px;
-    background-color: blueviolet;
+    
 }
 
 .size_select p{
     width: 70px;
+}
+
+.size_select input:checked + span{
+    color: blue;
+    font-weight: 600;
+}
+
+.size_select input{
+    display: none;
+}
+
+.size_select span{
+    padding: 5px;
+    margin-right: 10px;
+    cursor: pionter;
+}
+
+.color_selector{
+    display: flex;
+    align-items: 20px;
+    margin-top: 20px;
+}
+
+.color_selector p{
+    width: 75px;
+}
+
+.color_selector span{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.color_1{
     background: red;
+}
+.color_2{
+    background: #00d874;
+}
+.color_3{
+    background: blue;
+}
+.color_4{
+    background: pink;
+}
+
+.color_selector input{
+    display: none;
+}
+
+.color_selector input:checked + span {
+    transform: scale(0.7);
+    box-shadow: 0 0 0 4px #fff, 0 0 0 8px #000;
+}
+
+.quantity_selector{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.quantity_selector p{
+    width: 75px;
+}
+
+.quantity_selector input{
+    background: #eee;
+    border: 0;
+    outline: 0;
+    padding: 2px 2px 2px 15px ;
+    width: 50px;
+    border-radius: 12px;
+}
+
+.sec_24_form button{
+    background: #553ff0;
+    color: #fff;
+    font-size: 17px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 30px;
+    border: 0;
+    outline: 0;
+    margin-top: 50px;
+    box-shadow: 0 10px 10px rgba(85, 63, 240, 0.25);
+    cursor: pointer;
+}
+
+.sec_24_controls{
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+}
+
+.sec_24_btn{
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(59, 48, 48, 0.5);
+    margin: 10px;
+    cursor: pointer;
+}
+
+.sec_24_btn.active{
+    background: #553ff0;
+}
+
+/* Section 25 ==== CrptoCurrency Website ==== */
+.sec_25_crypto{
+    width: 100%;
+    height: 100vh;
+    background-image: url(sec_25_Crypto_image/Foresight\ Nemi.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 0 7%;
+    color: #fff;
+}
+nav{
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.sec_25_logo{
+    width: 50px;
+    cursor: pointer;
+}
+nav ul{
+    flex: 1;
+}
+nav ul li{
+    display: inline-block;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+nav .sec_25_btn{
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+
+.sec_25_content{
+    margin-top: 12%;
+}
+
+.sec_25_content h1{
+    font-size: 88px;
+    margin-bottom: 15px;
+}
+
+.sec_25_content h1 span{
+    color: #ff960b;
+}
+
+.sec_25_content .sec_25_btn{
+    display: inline-block;
+    margin-top: 30px;
+    background: #ff960b;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 30px;
 }
 
 
-/* Section 25 ==== CrptoCurrency Website ==== */
+
+
+
+
 /* Section 26 ==== Digital Clock ==== */
 /* Section 27 ==== Image Search Engine ==== */
 
