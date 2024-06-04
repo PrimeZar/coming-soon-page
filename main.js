@@ -826,8 +826,26 @@ const color_4= ()=>{
 
 
 // Section 25 ==== CrptoCurrency Website ====
+    // no yet done
+
 // Section 26 ==== Digital Clock ====
+const sec_26_Hrs = document.getElementById('sec_26_Hrs');
+const sec_26_Min = document.getElementById('sec_26_Min');
+const sec_26_Sec = document.getElementById('sec_26_Sec');
+
+setInterval(() =>{
+    let currentTime = new Date();
+
+    sec_26_Hrs.innerHTML = (currentTime.getHours()<10? '0': '') + currentTime.getHours();
+    sec_26_Min.innerHTML = (currentTime.getMinutes()<10? '0': '') + currentTime.getMinutes();
+    sec_26_Sec.innerHTML =  (currentTime.getSeconds()<10? '0':'') + currentTime.getSeconds(); 
+}, 1000);
+
+
 // Section 27 ==== Image Search Engine ====
 
-
+const sec_27_search_form = document.getElementById('sec_27_search_form');
+const search_result = document.getElementById('search_result');
+const show_more_btn = document.getElementById('show-more_btn"');
+const sec_27_search_box = document.getElementById('sec_27_search_box');
 
